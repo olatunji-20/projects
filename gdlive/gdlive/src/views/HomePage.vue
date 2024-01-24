@@ -1,7 +1,6 @@
 <template>
     <Navbar />
     <Hero />
-  <h1>LAULAU</h1>
 </template>
 
 <script>
