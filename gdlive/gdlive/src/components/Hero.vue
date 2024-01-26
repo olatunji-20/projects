@@ -2,7 +2,7 @@
   <main class="border-4 border-purple-500 w-[100%] h-[auto] flex flex-col justify-start pb-72 md:flex-row md:justify-center md:pb-48">
     <div class="border-4 border-green-500 w-[100%] h-[400px] md:w-[38%] px-4 py-12 md:h-[550px] md:px-12 md:pt-28">
         <h1 class="font-bold text-[40px]">Unfiltered, Unedited Stories</h1>
-        <p class="pt-4">We're committed to transparency and use our survey technology to collect and share real-time updates and stories
+        <p class="pt-4">We're committed to transparency and the use of our survey technology to collect and share real-time updates and stories
             in this live newsfeed.
         </p>
         <p class="font-bold pt-12">Learn about how we collect stories L</p>

@@ -4,7 +4,9 @@
             <div class="border-2 border-purple-300 w-[50%] h-[40px]"></div>
             <div class="border-2 border-pink-300 w-[100px] h-[40px]"></div>
         </div>
-        <div class="border-2 border-rose-500 w-[100%] h-[1500px] mt-16"></div>
+        <div class="border-2 border-rose-500 w-[100%] h-[auto] mt-16">
+            <EachStory />
+        </div>
         <div class="border-2 border-green-500 w-[100%] py-3 mx-auto my-12 text-center md:w-[250px]">
             <p>Load More</p>
         </div>
@@ -12,9 +14,19 @@
 </template>
 
 <script>
+import EachStory from '../components/EachStory.vue'
+
 export default {
     name: 'Stories',
-    setup() {}
+    setup() {
+
+        return {
+
+        }
+    },
+    components: {
+        EachStory
+    }
 
 }
 </script>
