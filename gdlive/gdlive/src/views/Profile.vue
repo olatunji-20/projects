@@ -31,19 +31,23 @@
         </div>
     </div>
 
-    <div class="border-4 border-purple-600 bg-purple-200 w-[100%] h-[1200px] py-8 px-4 my-16 mx-auto mb-48 md:w-[80%]">
+    <div class="border-4 border-purple-600 bg-purple-200 w-[100%] h-[auto] py-8 px-2 my-16 mx-auto mb-48 md:w-[80%]">
         <h3 class="font-bold text-lg">Activities</h3>
+        <div class="border-2 border-green-500 w-[100%] h-[auto] my-4">
+            <Activities />
+        </div>
     </div>
     <FootBar />
 </template>
 
 <script>
 import FootBar from '@/components/FootBar.vue';
+import Activities from '@/components/Activities.vue';
 import Navbar from '@/components/Navbar.vue';
 
 export default {
     name: 'Profile',
-    components: { Navbar, FootBar }
+    components: { Navbar, Activities, FootBar }
 }
 </script>
 
