@@ -1,6 +1,5 @@
-<template>
-    
-  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 my-[30px] flex flex-row justify-between">
+<template>    
+  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 flex flex-row justify-between">
     <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
         <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full"></div>
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
@@ -13,17 +12,31 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">20 hours ago</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4">S</p>
+        <p class="inline ml-4 border-2 border-red-500 p-2 cursor-pointer" @click="toggleEnroll" >S</p>
     </div>
   </div>
 
+  <transition
+    enter-active-class="transition duration-900"
+    enter-from-class="h-[0px]"
+    enter-to-class="h-[auto]"
+    leave-active-class="transition duration-900"
+    leave-from-class="h-[auto]"
+    leave-to-class="h-[0px]">
+        <div v-show="showEnroll" class="border-2 border-purple-600 w-[100%] h-[auto] bg-blue-100 my-4">
+            <h1>testinf testing</h1>
+        </div>
+  </transition>
+
+
+<!--   
   <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 my-[30px] flex flex-row justify-between">
     <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
         <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full"></div>
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Initial Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
-            <p class="text-sm font-bold">55 000KEH ($38 000)</p>
+            <p class="text-sm font-bold">55,000KEH ($38,000)</p>
             <p class="text-sm mt-4">Fri, Feb 12, 2023</p>
         </div>
     </div>
@@ -49,7 +62,7 @@
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4">S</p>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -57,8 +70,22 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
-    name: "Activities"
+    name: "Activities",
+    setup() {
+        const showEnroll = ref(false);
+
+        const toggleEnroll = () => {
+            showEnroll.value = !showEnroll.value
+        }
+
+        return {
+            showEnroll,
+            toggleEnroll
+        }
+    },
 
 }
 </script>
