@@ -16,16 +16,10 @@
     </div>
   </div>
 
-  <transition
-    enter-active-class="transition duration-900"
-    enter-from-class="h-[0px]"
-    enter-to-class="h-[auto]"
-    leave-active-class="transition duration-900"
-    leave-from-class="h-[auto]"
-    leave-to-class="h-[0px]">
-        <div v-show="showEnroll" class="border-2 border-purple-600 w-[100%] h-[auto] bg-blue-100 my-4">
-            <h1>testinf testing</h1>
-        </div>
+  <transition name="hhh">
+    <div v-show="showEnroll" class="border-2 border-purple-600 w-[100%] h-[200px] bg-blue-100 my-4">
+        <h1>testinf testing</h1>
+    </div>
   </transition>
 
 
@@ -90,6 +84,24 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.hhh-enter-from {
+    height: 0px;
+}
+.hhh-enter-to {
+    height: 200px
+}
+.hhh-enter-active {
+    transition: 0.4s linear;
+}
+.hhh-leave-from {
+    height: 200px;
+}
+.hhh-leave-to {
+    height: 0px
+}
+.hhh-leave-active {
+    transition: 0.4s linear;
+}
 
 </style>
