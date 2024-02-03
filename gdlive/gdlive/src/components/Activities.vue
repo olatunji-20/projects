@@ -13,7 +13,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">20 hours ago</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll" >S</p>
+        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll" >V</p>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">20 hours ago</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll2" >S</p>
+        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll2" >V</p>
     </div>
   </div>
 
@@ -59,7 +59,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">20 hours ago</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3" >S</p>
+        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3" >V</p>
     </div>
   </div>
 
