@@ -2,10 +2,11 @@
     <Navbar />
     <!-- <h1>PROFILE PAGE</h1> -->
     <main class="border-4 border-blue-800 w-[100%] h-[auto] mx-[auto] mt-8 md:w-[80%] md:mt-12">
-        <div class="border-4 border-green-500 w-[100%] h-[250px] md:h-[320px]"></div>
-        <div class="border-4 border-red-500 w-[100%] h-[250px] md:h-[320px]">
-            <div class="border-8 border-yellow-600 w-[120px] h-[120px] rounded-full relative left-8 bottom-[25%] bg-blue-200 md:w-[200px] md:h-[200px] md:bottom-[30%]"></div>
+        <div class="border-4 border-green-500 w-[100%] h-[250px] md:h-[320px]">
+            <div class="border-4 border-red-400 w-[100%] h-[100%]"></div>
+            <div class="border-8 border-yellow-600 w-[130px] h-[130px] rounded-full relative left-8 bottom-16 bg-blue-200 md:w-[200px] md:h-[200px] md:bottom-[30%]"></div>
         </div>
+        <div class="border-4 border-red-500 w-[100%] h-[250px] md:h-[320px]"></div>
     </main>
 
     <div class="border-4 border-blue-600 bg-blue-200 w-[100%] h-[auto] my-16 mx-auto py-1 md:flex flex-row items-center justify-evenly md:w-[80%]">
