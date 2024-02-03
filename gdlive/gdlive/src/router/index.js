@@ -15,7 +15,16 @@ const router = createRouter({
       name: 'Profile',
       component: Profile
     }
-  ]
+  ],
+  scrollBehavior(stand, homepage, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    return {
+      left: 50, top: 0
+    }
+  }
+  
 })
 
 export default router
