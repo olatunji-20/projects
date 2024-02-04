@@ -8,7 +8,7 @@
         </div>
         <div class="border-4 border-red-500 w-[100%] h-[auto] px-4 md:h-[320px]">
             <div class="border-2 border-blue-500 w-[100%] h-[auto] mt-20 flex flex-row md:mt-28">
-                <h2 class="font-bold text-xl">Daniel</h2>
+                <h2 class="font-bold text-xl">{{ profileStore.profile.name }}</h2>
                 <p class="ml-4 text-xl md:ml-12">22yrs</p>
                 <div class="border border-red-400 ml-4 md:ml-12"><img class=" w-[20px] h-[20px] inline" /><p class="ml-4 text-xl inline">Malawi</p></div>
             </div>
@@ -45,13 +45,29 @@
 </template>
 
 <script>
+import { useCounterStore } from '@/stores/counter';
 import FootBar from '@/components/FootBar.vue';
 import Activities from '@/components/Activities.vue';
 import Navbar from '@/components/Navbar.vue';
 import Progress from '@/components/Progress.vue';
+import { useRoute } from 'vue-router';
+import { onMounted } from 'vue';
 
 export default {
     name: 'Profile',
+    setup() {
+        const route = useRoute();
+        const profileStore = useCounterStore();
+
+        onMounted(async () => {
+            await profileStore.getProfile(route.params.id)
+        })
+
+
+        return {
+            profileStore
+        }
+    },
     components: { Navbar, Activities, FootBar, Progress }
 }
 </script>
