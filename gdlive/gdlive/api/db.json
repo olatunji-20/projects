@@ -4,85 +4,170 @@
             "id": 1,
             "imageUrl": "https://ovinovvioirh",
             "name": "daniel",
-            "dob": "sfewfe",
-            "occupation": "xdgrgr",
-            "heading": "csdnf",
+            "dob": "1994-05-23",
+            "occupation": "Teacher",
+            "heading": "received a $388 initial payment",
             "story": "csdfgrg",
-            "time": "143434",
             "status": "iun",
-            "country": "nirgr",
-            "campaign": "cnor",
-            "coverImage": "https://ijijfiunrvo"
+            "posted": 3457437,
+            "country": "Nigeria",
+            "campaign": "Teach For Nigeria",
+            "coverImage": "https://ijijfiunrvo",
+            "payments": {
+                "firstPayment": {
+                    "amount": 346456,
+                    "time": 39235
+                },
+                "secondPayment": {
+                    "amount": 353656,
+                    "time": 53656
+                },
+                "finalPayment": {
+                    "amount": 346565,
+                    "time": 35365
+                }
+            }
         },
         {
             "id": 2,
             "imageUrl": "https://ovivoihroinov",
             "name": "micheal",
-            "dob": "sfewfe",
-            "occupation": "xdgrgr",
-            "heading": "csdnf",
+            "dob": "1998-11-09",
+            "occupation": "Builder",
+            "heading": "received a $194 third payment",
             "story": "csdfgrg",
-            "time": "143434",
             "status": "iun",
-            "country": "nirgr",
-            "campaign": "cnor",
-            "coverImage": "https://ijijfiunrvo"
+            "posted": 3457437,
+            "country": "Kenya",
+            "campaign": "Kenya Basic Income",
+            "coverImage": "https://ijijfiunrvo",
+            "payments": {
+                "firstPayment": {
+                    "amount": 346456,
+                    "time": 39235
+                },
+                "secondPayment": {
+                    "amount": 353656,
+                    "time": 53656
+                },
+                "finalPayment": {
+                    "amount": 346565,
+                    "time": 35365
+                }
+            }
         },
         {
             "id": 3,
             "imageUrl": "https://oviofjoritnov",
             "name": "samuel",
-            "dob": "sfewfe",
-            "occupation": "xdgrgr",
-            "heading": "csdnf",
+            "dob": "1996-03-28",
+            "occupation": "Trader",
+            "heading": "enrolled",
             "story": "csdfgrg",
-            "time": "143434",
             "status": "iun",
-            "country": "nirgr",
-            "campaign": "cnor",
-            "coverImage": "https://ijijfiunrvo"
+            "posted": 3457437,
+            "country": "Tunisia",
+            "campaign": "T.S.F.D",
+            "coverImage": "https://ijijfiunrvo",
+            "payments": {
+                "firstPayment": {
+                    "amount": 346456,
+                    "time": 39235
+                },
+                "secondPayment": {
+                    "amount": 353656,
+                    "time": 53656
+                },
+                "finalPayment": {
+                    "amount": 346565,
+                    "time": 35365
+                }
+            }
         },
         {
             "id": 4,
             "imageUrl": "https://oviofjoritnov",
             "name": "joshua",
-            "dob": "sfewfe",
-            "occupation": "xdgrgr",
-            "heading": "csdnf",
+            "dob": "2001-12-25",
+            "occupation": "Doctor",
+            "heading": "received a $163 final payment",
             "story": "csdfgrg",
-            "time": "143434",
             "status": "iun",
-            "country": "nirgr",
-            "campaign": "cnor",
-            "coverImage": "https://ijijfiunrvo"
+            "posted": 3457437,
+            "country": "Egypt",
+            "campaign": "E.Y.P.D",
+            "coverImage": "https://ijijfiunrvo",
+            "payments": {
+                "firstPayment": {
+                    "amount": 346456,
+                    "time": 39235
+                },
+                "secondPayment": {
+                    "amount": 353656,
+                    "time": 53656
+                },
+                "finalPayment": {
+                    "amount": 346565,
+                    "time": 35365
+                }
+            }
         },
         {
             "id": 5,
             "imageUrl": "https://oviofjoritnov",
             "name": "peter",
-            "dob": "sfewfe",
-            "occupation": "xdgrgr",
-            "heading": "csdnf",
+            "dob": "1992-03-09",
+            "occupation": "Driver",
+            "heading": "received a $244 initial payment",
             "story": "csdfgrg",
-            "time": "143434",
             "status": "iun",
-            "country": "nirgr",
-            "campaign": "cnor",
-            "coverImage": "https://ijijfiunrvo"
+            "posted": 3457437,
+            "country": "Togo",
+            "campaign": "T.D.L.P",
+            "coverImage": "https://ijijfiunrvo",
+            "payments": {
+                "firstPayment": {
+                    "amount": 346456,
+                    "time": 39235
+                },
+                "secondPayment": {
+                    "amount": 353656,
+                    "time": 53656
+                },
+                "finalPayment": {
+                    "amount": 346565,
+                    "time": 35365
+                }
+            }
         },
         {
             "id": 6,
             "imageUrl": "https://oviofjoritnov",
             "name": "paul",
-            "dob": "sfewfe",
-            "occupation": "xdgrgr",
-            "heading": "csdnf",
+            "dob": "1999-02-18",
+            "occupation": "Farmer",
+            "heading": "enrolled",
             "story": "csdfgrg",
-            "time": "143434",
             "status": "iun",
-            "country": "nirgr",
-            "campaign": "cnor",
-            "coverImage": "https://ijijfiunrvo"
+            "posted": 3457437,
+            "country": "USA",
+            "campaign": "O.S.W.D",
+            "coverImage": "https://ijijfiunrvo",
+            "payments": {
+                "firstPayment": {
+                    "amount": 346456,
+                    "time": 39235
+                },
+                "secondPayment": {
+                    "amount": 353656,
+                    "time": 53656
+                },
+                "finalPayment": {
+                    "amount": 346565,
+                    "time": 35365
+                }
+            }
         }
+
     ]
 }

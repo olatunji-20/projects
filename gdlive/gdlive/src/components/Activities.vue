@@ -7,7 +7,7 @@
             <h3 class="font-bold text-xl">Final Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
             <p class="text-sm font-bold">127, 000 KES ($52,000)</p>
-            <p class="text-sm mt-4">2 hours ago</p>
+            <p class="text-sm mt-4 md:hidden">2 hours ago</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
@@ -30,7 +30,7 @@
             <h3 class="font-bold text-xl">Initial Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
             <p class="text-sm font-bold">55,000 KES ($33,000)</p>
-            <p class="text-sm mt-4">20 hours ago</p>
+            <p class="text-sm mt-4 md:hidden">20 hours ago</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
@@ -53,7 +53,7 @@
             <h3 class="font-bold text-xl">Enrolled</h3>
             <p class="font-bold mt-4">Location</p>
             <p class="text-sm font-bold">Lagos, Nigeria</p>
-            <p class="text-sm mt-4">Fri, Feb 12, 2023</p>
+            <p class="text-sm mt-4 md:hidden">Fri, Feb 12, 2023</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
