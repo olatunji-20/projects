@@ -38,7 +38,17 @@
                  lives move forward.
             </p>
         </div>
-        <div class="border-2 border-sky-400 w-[90%] h-[40px] my-12 mx-auto md:w-[35%] relative md:top-12"></div>
+        <div class="border-2 border-green-400 w-[90%] h-[30px] my-12 mx-auto flex flex-row flex-nowrap justify-between items-center md:w-[35%] relative md:top-12">
+            <img src="/img/nigeria.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/us.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/malawi.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/mozambiq.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/kenya.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/togo.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/turkey.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/liberia.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/yemen.png" class="border-2 h-[25px] w-[30px]" />
+        </div>
     </div>
 </div>
 </template>
