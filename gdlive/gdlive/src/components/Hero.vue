@@ -39,15 +39,15 @@
             </p>
         </div>
         <div class="border-2 border-green-400 w-[90%] h-[30px] my-12 mx-auto flex flex-row flex-nowrap justify-between items-center md:w-[35%] relative md:top-12">
-            <img src="/img/nigeria.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/us.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/malawi.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/mozambiq.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/kenya.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/togo.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/turkey.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/liberia.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/yemen.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Nigeria.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/USA.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Malawi.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Mozambiq.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Kenya.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Togo.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Turkey.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Liberia.png" class="border-2 h-[25px] w-[30px]" />
+            <img src="/img/Yemen.png" class="border-2 h-[25px] w-[30px]" />
         </div>
     </div>
 </div>

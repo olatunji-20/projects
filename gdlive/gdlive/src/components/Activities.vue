@@ -6,12 +6,12 @@
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Final Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
-            <p class="text-sm font-bold">127, 000 KES ($52,000)</p>
-            <p class="text-sm mt-4 md:hidden">2 hours ago</p>
+            <p class="text-sm font-bold">{{ paymentInfo.finalPaymentAmount }} KES ($52,000)</p>
+            <p class="text-sm mt-4 md:hidden">{{ paymentInfo.finalPaymentTime }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
-        <p class="hidden md:block">20 hours ago</p>
+        <p class="hidden md:block">{{ paymentInfo.finalPaymentTime }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll" >V</p>
     </div>
@@ -29,12 +29,12 @@
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Initial Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
-            <p class="text-sm font-bold">55,000 KES ($33,000)</p>
-            <p class="text-sm mt-4 md:hidden">20 hours ago</p>
+            <p class="text-sm font-bold">{{ paymentInfo.firstPaymentAmount }} KES ($33,000)</p>
+            <p class="text-sm mt-4 md:hidden">{{ paymentInfo.firstPaymentTime }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
-        <p class="hidden md:block">20 hours ago</p>
+        <p class="hidden md:block">{{ paymentInfo.firstPaymentTime }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll2" >V</p>
     </div>
@@ -53,11 +53,11 @@
             <h3 class="font-bold text-xl">Enrolled</h3>
             <p class="font-bold mt-4">Location</p>
             <p class="text-sm font-bold">Lagos, Nigeria</p>
-            <p class="text-sm mt-4 md:hidden">Fri, Feb 12, 2023</p>
+            <p class="text-sm mt-4 md:hidden">{{ paymentInfo.enrollmentTime }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
-        <p class="hidden md:block">20 hours ago</p>
+        <p class="hidden md:block">{{ paymentInfo.enrollmentTime }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3" >V</p>
     </div>
@@ -71,11 +71,14 @@
 
 </template>
 
-<script>
+<script >
 import { ref } from 'vue';
 
 export default {
     name: "Activities",
+    props: {
+        paymentInfo: Object
+    },
     setup() {
         const showEnroll = ref(false);
         const showEnroll2 = ref(false);
@@ -97,7 +100,8 @@ export default {
             showEnroll, showEnroll2, showEnroll3,
             toggleEnroll, toggleEnroll2, toggleEnroll3
         }
-    },
+    }
+    
 
 }
 </script>

@@ -2,7 +2,7 @@
     "profiles": [
         {
             "id": 1,
-            "imageUrl": "https://ovinovvioirh",
+            "imageUrl": "/img/daniel.png",
             "name": "daniel",
             "dob": "1994-05-23",
             "occupation": "Teacher",
@@ -12,25 +12,16 @@
             "posted": 3457437,
             "country": "Nigeria",
             "campaign": "Teach For Nigeria",
-            "coverImage": "https://ijijfiunrvo",
-            "payments": {
-                "firstPayment": {
-                    "amount": 346456,
-                    "time": 39235
-                },
-                "secondPayment": {
-                    "amount": 353656,
-                    "time": 53656
-                },
-                "finalPayment": {
-                    "amount": 346565,
-                    "time": 35365
-                }
-            }
+            "coverImage": "/img/dancover.png",
+            "firstPaymentAmount": 5464,
+            "firstPaymentTime": 364746,
+            "finalPaymentAmount": 98796678,
+            "finalPaymentTime": 2365374,
+            "enrollmentTime": 344576
         },
         {
             "id": 2,
-            "imageUrl": "https://oviofjoritnov",
+            "imageUrl": "/img/daniel.png",
             "name": "samuel",
             "dob": "1996-03-28",
             "occupation": "Trader",
@@ -38,23 +29,14 @@
             "story": "Financial constraint is the greatest challenge. I have been relying on motorcycle & taxi business to earn a living but three months ago it was stollen. This left me struggling to make ends meet and i resorted to casual jobs which are unreliable",
             "status": "iun",
             "posted": 3457437,
-            "country": "Tunisia",
+            "country": "Turkey",
             "campaign": "T.S.F.D",
-            "coverImage": "https://ijijfiunrvo",
-            "payments": {
-                "firstPayment": {
-                    "amount": 346456,
-                    "time": 39235
-                },
-                "secondPayment": {
-                    "amount": 353656,
-                    "time": 53656
-                },
-                "finalPayment": {
-                    "amount": 346565,
-                    "time": 35365
-                }
-            }
+            "coverImage": "/img/samcover.png",
+            "firstPaymentAmount": 5464,
+            "firstPaymentTime": 364746,
+            "finalPaymentAmount": 98796678,
+            "finalPaymentTime": 2365374,
+            "enrollmentTime": 344576 
         },
         {
             "id": 3,
@@ -63,58 +45,40 @@
             "dob": "1998-11-09",
             "occupation": "Builder",
             "heading": "received a $194 third payment",
-            "story": "Despite the obstacles posed by drought, my hope for the forthcoming year and beyond revolves around delving into cash crop cultivation. To achieve this, my plan involves acquiring a generator to facilitate water pumping to our plot of land located near the river. Although the prospect is somewhat challenging due to my daughter's impending transition to secondary school.",
+            "story": "Despite the obstacles posed by drought, my hope for the forthcoming year and beyond revolves around delving into cash crop cultivation. To achieve this, my plan involves acquiring a generator to facilitate water pumping to our plot of land located near the river. Although the prospect is somewhat challenging due to my daughter's impending transition to finalary school.",
             "status": "iun",
             "posted": 3457437,
             "country": "Kenya",
             "campaign": "Kenya Basic Income",
-            "coverImage": "https://ijijfiunrvo",
-            "payments": {
-                "firstPayment": {
-                    "amount": 346456,
-                    "time": 39235
-                },
-                "secondPayment": {
-                    "amount": 353656,
-                    "time": 53656
-                },
-                "finalPayment": {
-                    "amount": 346565,
-                    "time": 35365
-                }
-            }
+            "coverImage": "/img/miccover.png",
+            "firstPaymentAmount": 5464,
+            "firstPaymentTime": 364746,
+            "finalPaymentAmount": 98796678,
+            "finalPaymentTime": 2365374,
+            "enrollmentTime": 344576 
         },
         {
             "id": 4,
-            "imageUrl": "https://oviofjoritnov",
+            "imageUrl": "/img/daniel.png",
             "name": "joshua",
             "dob": "2001-12-25",
             "occupation": "Doctor",
             "heading": "received a $163 final payment",
-            "story": "Despite the obstacles posed by drought, my hope for the forthcoming year and beyond revolves around delving into cash crop cultivation. To achieve this, my plan involves acquiring a generator to facilitate water pumping to our plot of land located near the river. Although the prospect is somewhat challenging due to my daughter's impending transition to secondary school.",
+            "story": "Despite the obstacles posed by drought, my hope for the forthcoming year and beyond revolves around delving into cash crop cultivation. To achieve this, my plan involves acquiring a generator to facilitate water pumping to our plot of land located near the river. Although the prospect is somewhat challenging due to my daughter's impending transition to finalary school.",
             "status": "iun",
             "posted": 3457437,
-            "country": "Egypt",
+            "country": "Yemen",
             "campaign": "E.Y.P.D",
-            "coverImage": "https://ijijfiunrvo",
-            "payments": {
-                "firstPayment": {
-                    "amount": 346456,
-                    "time": 39235
-                },
-                "secondPayment": {
-                    "amount": 353656,
-                    "time": 53656
-                },
-                "finalPayment": {
-                    "amount": 346565,
-                    "time": 35365
-                }
-            }
+            "coverImage": "/img/joscover.png",
+            "firstPaymentAmount": 5464,
+            "firstPaymentTime": 364746,
+            "finalPaymentAmount": 98796678,
+            "finalPaymentTime": 2365374,
+            "enrollmentTime": 344576 
         },
         {
             "id": 5,
-            "imageUrl": "https://oviofjoritnov",
+            "imageUrl": "/img/daniel.png",
             "name": "peter",
             "dob": "1992-03-09",
             "occupation": "Driver",
@@ -124,25 +88,16 @@
             "posted": 3457437,
             "country": "Togo",
             "campaign": "T.D.L.P",
-            "coverImage": "https://ijijfiunrvo",
-            "payments": {
-                "firstPayment": {
-                    "amount": 346456,
-                    "time": 39235
-                },
-                "secondPayment": {
-                    "amount": 353656,
-                    "time": 53656
-                },
-                "finalPayment": {
-                    "amount": 346565,
-                    "time": 35365
-                }
-            }
+            "coverImage": "/img/petcover.png",
+            "firstPaymentAmount": 5464,
+            "firstPaymentTime": 364746,
+            "finalPaymentAmount": 98796678,
+            "finalPaymentTime": 2365374,
+            "enrollmentTime": 344576 
         },
         {
             "id": 6,
-            "imageUrl": "https://oviofjoritnov",
+            "imageUrl": "/img/daniel.png",
             "name": "paul",
             "dob": "1999-02-18",
             "occupation": "Farmer",
@@ -152,21 +107,12 @@
             "posted": 3457437,
             "country": "USA",
             "campaign": "O.S.W.D",
-            "coverImage": "https://ijijfiunrvo",
-            "payments": {
-                "firstPayment": {
-                    "amount": 346456,
-                    "time": 39235
-                },
-                "secondPayment": {
-                    "amount": 353656,
-                    "time": 53656
-                },
-                "finalPayment": {
-                    "amount": 346565,
-                    "time": 35365
-                }
-            }
+            "coverImage": "/img/dancover.png",
+            "firstPaymentAmount": 5464,
+            "firstPaymentTime": 364746,
+            "finalPaymentAmount": 98796678,
+            "finalPaymentTime": 2365374,
+            "enrollmentTime": 344576 
         }
 
     ]

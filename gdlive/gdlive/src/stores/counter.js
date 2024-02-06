@@ -2,44 +2,36 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
-export const useCounterStore = defineStore('counter', () => {
+export const useCounterStore = defineStore('counter', {
+  state: () => {
+    return {
+      profiles: [],
+      profile: {}
+    }
+  },
+  actions: {
+    async getProfiles() {    
+        try {
+          const res = await axios.get("http://localhost:3500/profiles");
+          this.profiles = await res.data;
+          console.log(profiles)
+        } catch(err) {
+          console.log("error couldn't fetch", err)
+        }
+      },
 
-  const profiles = ref([]);
-  const profile = ref({});
-
-  const getProfiles = async () => {
-    let url = "http://localhost:3500/profiles";
-
-    try {
-      const res = await axios.get(url);
-      profiles.value = await res.data;
-      console.log(profiles)
-    } catch(err) {
-      console.log("error couldn't fetch", err)
+    async getProfile(id) {
+      try {
+        const res = await axios.get("http://localhost:3500/profiles/" + id);
+        this.profile = await res.data;
+      } catch (err) {
+        console.log(err + "ebjrnt")
+      }
     }
 
+
+
   }
-
-
-  const getProfile = async (id) => {
-    try {
-      const res = await axios.get("http://localhost:3500/profiles/" + id);
-      profile.value = await res.data;
-
-    } catch (err) {
-      console.log(err + "ebjrnt")
-    }
-  }
-
-  return { 
-    profiles,
-    getProfiles,
-    profile,
-    getProfile
-   }
-
-
-
 
 
 })
