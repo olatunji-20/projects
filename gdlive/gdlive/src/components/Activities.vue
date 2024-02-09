@@ -7,7 +7,8 @@
             <h3 class="font-bold text-xl">Final Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
             <p class="text-sm font-bold">{{ paymentInfo.finalPaymentAmount }} KES ($52,000)</p>
-            <p class="text-sm mt-4 md:hidden">{{ paymentInfo.finalPaymentTime }}</p>
+            <!-- <p class="text-sm mt-4 md:hidden">{{ paymentInfo.finalPaymentTime }}</p> -->
+            <p class="text-sm mt-4 md:hidden">{{ postTime().year }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
@@ -18,8 +19,8 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll" class="border-2 border-purple-600 rounded-md w-[100%] h-[200px] bg-blue-100 my-2 p-2">
-        <h1>testinf testing</h1>
+    <div v-show="showEnroll" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2">
+        <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
 
@@ -30,7 +31,8 @@
             <h3 class="font-bold text-xl">Initial Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
             <p class="text-sm font-bold">{{ paymentInfo.firstPaymentAmount }} KES ($33,000)</p>
-            <p class="text-sm mt-4 md:hidden">{{ paymentInfo.firstPaymentTime }}</p>
+            <!-- <p class="text-sm mt-4 md:hidden">{{ paymentInfo.firstPaymentTime }}</p> -->
+            <p class="text-sm mt-4 md:hidden">{{ postTime().month }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
@@ -41,8 +43,8 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll2" class="border-2 border-purple-600 rounded-md w-[100%] h-[200px] bg-blue-100 my-2 p-2">
-        <h1>testinf testing</h1>
+    <div v-show="showEnroll2" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2">
+        <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
 
@@ -53,19 +55,21 @@
             <h3 class="font-bold text-xl">Enrolled</h3>
             <p class="font-bold mt-4">Location</p>
             <p class="text-sm font-bold">Lagos, Nigeria</p>
-            <p class="text-sm mt-4 md:hidden">{{ paymentInfo.enrollmentTime }}</p>
+            <!-- <p class="text-sm mt-4 md:hidden">{{ paymentInfo.enrollmentTime }}</p> -->
+            <p class="text-sm mt-4 md:hidden">{{ postTime() }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">{{ paymentInfo.enrollmentTime }}</p>
+        <p class="text-sm mt-4">{{ postTime() }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3" >V</p>
     </div>
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll3" class="border-2 border-purple-600 rounded-md w-[100%] h-[200px] bg-blue-100 my-2 p-2">
-        <h1>testinf testing</h1>
+    <div v-show="showEnroll3" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2">
+        <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
 
@@ -73,6 +77,7 @@
 
 <script >
 import { ref } from 'vue';
+import { DateTime } from 'luxon';
 
 export default {
     name: "Activities",
@@ -96,9 +101,14 @@ export default {
             showEnroll3.value = !showEnroll3.value
         }
 
+        const postTime = () => {
+            return DateTime.now().toObject()
+        }
+
         return {
             showEnroll, showEnroll2, showEnroll3,
-            toggleEnroll, toggleEnroll2, toggleEnroll3
+            toggleEnroll, toggleEnroll2, toggleEnroll3,
+            postTime
         }
     }
     

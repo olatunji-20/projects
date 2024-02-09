@@ -14,7 +14,6 @@ export const useCounterStore = defineStore('counter', {
         try {
           const res = await axios.get("http://localhost:3500/profiles");
           this.profiles = await res.data;
-          console.log(profiles)
         } catch(err) {
           console.log("error couldn't fetch", err)
         }
