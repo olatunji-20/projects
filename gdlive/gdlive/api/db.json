@@ -14,10 +14,10 @@
             "campaign": "Teach For Nigeria",
             "coverImage": "/img/dancover.png",
             "firstPaymentAmount": 5464,
-            "firstPaymentTime": 364746,
+            "firstPaymentTime": "2024-02-04T15:42:34.469+01:00",
             "finalPaymentAmount": 86379,
-            "finalPaymentTime": 2365374,
-            "enrollmentTime": 344576
+            "finalPaymentTime": "2024-02-09T15:42:34.469+01:00",
+            "enrollmentTime": "2024-02-09T15:42:34.469+01:00"
         },
         {
             "id": 2,
@@ -32,11 +32,11 @@
             "country": "Turkey",
             "campaign": "T.S.F.D",
             "coverImage": "/img/samcover.png",
-            "firstPaymentAmount": 5464,
-            "firstPaymentTime": 364746,
+            "firstPaymentAmount": 5464,            
+            "firstPaymentTime": "2024-02-09T13:42:34.469+01:00",
             "finalPaymentAmount": 86379,
-            "finalPaymentTime": 2365374,
-            "enrollmentTime": 344576 
+            "finalPaymentTime": "2024-02-11T14:42:34.469+01:00",
+            "enrollmentTime": "2024-02-09T15:42:34.469+01:00" 
         },
         {
             "id": 3,
@@ -51,11 +51,11 @@
             "country": "Kenya",
             "campaign": "Kenya Basic Income",
             "coverImage": "/img/miccover.png",
-            "firstPaymentAmount": 5464,
-            "firstPaymentTime": 364746,
+            "firstPaymentAmount": 5464,            
+            "firstPaymentTime": "2024-02-09T15:42:34.469+01:00",
             "finalPaymentAmount": 86379,
-            "finalPaymentTime": 2365374,
-            "enrollmentTime": 344576 
+            "finalPaymentTime": "2024-02-09T15:42:34.469+01:00",
+            "enrollmentTime": "2024-02-09T15:42:34.469+01:00" 
         },
         {
             "id": 4,
@@ -70,11 +70,11 @@
             "country": "Yemen",
             "campaign": "E.Y.P.D",
             "coverImage": "/img/joscover.png",
-            "firstPaymentAmount": 5464,
-            "firstPaymentTime": 364746,
+            "firstPaymentAmount": 5464,            
+            "firstPaymentTime": "2024-02-09T15:42:34.469+01:00",
             "finalPaymentAmount": 86379,
-            "finalPaymentTime": 2365374,
-            "enrollmentTime": 344576 
+            "finalPaymentTime": "2024-02-09T15:42:34.469+01:00",
+            "enrollmentTime": "2024-02-09T15:42:34.469+01:00" 
         },
         {
             "id": 5,
@@ -89,11 +89,11 @@
             "country": "Togo",
             "campaign": "T.D.L.P",
             "coverImage": "/img/petcover.png",
-            "firstPaymentAmount": 5464,
-            "firstPaymentTime": 364746,
+            "firstPaymentAmount": 5464,            
+            "firstPaymentTime": "2024-02-09T15:42:34.469+01:00",
             "finalPaymentAmount": 86379,
-            "finalPaymentTime": 2365374,
-            "enrollmentTime": 344576 
+            "finalPaymentTime": "2024-02-09T15:42:34.469+01:00",
+            "enrollmentTime": "2024-02-09T15:42:34.469+01:00" 
         },
         {
             "id": 6,
@@ -108,11 +108,11 @@
             "country": "USA",
             "campaign": "O.S.W.D",
             "coverImage": "/img/dancover.png",
-            "firstPaymentAmount": 5464,
-            "firstPaymentTime": 364746,
+            "firstPaymentAmount": 5464,            
+            "firstPaymentTime": "2024-02-09T15:42:34.469+01:00",
             "finalPaymentAmount": 86379,
-            "finalPaymentTime": 2365374,
-            "enrollmentTime": 344576 
+            "finalPaymentTime": "2024-02-09T15:42:34.469+01:00",
+            "enrollmentTime": "2024-02-09T15:42:34.469+01:00" 
         }
 
     ]

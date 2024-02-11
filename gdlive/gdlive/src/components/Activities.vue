@@ -6,13 +6,12 @@
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Final Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
-            <p class="text-sm font-bold">{{ paymentInfo.finalPaymentAmount }} KES ($52,000)</p>
-            <!-- <p class="text-sm mt-4 md:hidden">{{ paymentInfo.finalPaymentTime }}</p> -->
-            <p class="text-sm mt-4 md:hidden">{{ postTime().year }}</p>
+            <p class="text-sm font-bold"><span class="line-through">N</span>{{ paymentInfo.finalPaymentAmount }} (${{ ((paymentInfo.finalPaymentAmount)/dollarRate).toFixed(2) }})</p>
+            <p class="text-sm mt-4 md:hidden">{{ timeAgo(paymentInfo.finalPaymentTime) }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
-        <p class="hidden md:block">{{ paymentInfo.finalPaymentTime }}</p>
+        <p class="hidden md:block">{{ timeAgo(paymentInfo.finalPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll" >V</p>
     </div>
@@ -30,13 +29,12 @@
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Initial Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
-            <p class="text-sm font-bold">{{ paymentInfo.firstPaymentAmount }} KES ($33,000)</p>
-            <!-- <p class="text-sm mt-4 md:hidden">{{ paymentInfo.firstPaymentTime }}</p> -->
-            <p class="text-sm mt-4 md:hidden">{{ postTime().month }}</p>
+            <p class="text-sm font-bold"><span class="line-through">N</span>{{ paymentInfo.firstPaymentAmount }} (${{ ((paymentInfo.firstPaymentAmount)/dollarRate).toFixed(2) }})</p>
+            <p class="text-sm mt-4 md:hidden">{{ timeAgo(paymentInfo.firstPaymentTime) }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
-        <p class="hidden md:block">{{ paymentInfo.firstPaymentTime }}</p>
+        <p class="hidden md:block">{{ timeAgo(paymentInfo.firstPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll2" >V</p>
     </div>
@@ -55,13 +53,11 @@
             <h3 class="font-bold text-xl">Enrolled</h3>
             <p class="font-bold mt-4">Location</p>
             <p class="text-sm font-bold">Lagos, Nigeria</p>
-            <!-- <p class="text-sm mt-4 md:hidden">{{ paymentInfo.enrollmentTime }}</p> -->
-            <p class="text-sm mt-4 md:hidden">{{ postTime() }}</p>
+            <p class="text-sm mt-4 md:hidden">{{ timeAgo(paymentInfo.enrollmentTime) }}</p>
         </div>
     </div>
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
-        <p class="hidden md:block">{{ paymentInfo.enrollmentTime }}</p>
-        <p class="text-sm mt-4">{{ postTime() }}</p>
+        <p class="hidden md:block">{{ timeAgo(paymentInfo.enrollmentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3" >V</p>
     </div>
@@ -77,7 +73,6 @@
 
 <script >
 import { ref } from 'vue';
-import { DateTime } from 'luxon';
 
 export default {
     name: "Activities",
@@ -88,6 +83,7 @@ export default {
         const showEnroll = ref(false);
         const showEnroll2 = ref(false);
         const showEnroll3 = ref(false);
+        const dollarRate = ref(1483)
 
         const toggleEnroll = () => {
             showEnroll.value = !showEnroll.value
@@ -101,14 +97,47 @@ export default {
             showEnroll3.value = !showEnroll3.value
         }
 
-        const postTime = () => {
-            return DateTime.now().toObject()
+        const timeAgo = (x) => {
+            const seconds = Math.floor((new Date() - new Date(x))/ 1000);
+
+            let interval = Math.floor(seconds / 31536000);
+
+            if (interval > 1) {
+                return interval + ' years ago';
+            }
+
+            interval = Math.floor(seconds / 2592000);
+            if (interval > 1) {
+                return interval + ' months ago';
+            }
+
+            interval = Math.floor(seconds / 86400);
+            if (interval > 1) {
+                return interval + ' days ago';
+            }
+
+            interval = Math.floor(seconds / 3600);
+            if (interval > 1) {
+                return interval + ' hours ago';
+            }
+
+            interval = Math.floor(seconds / 60);
+            if (interval > 1) {
+                return interval + ' minutes ago';
+            }
+
+            if (seconds < 10) {
+                return ' just now';
+            }
+
+            return Math.floor(seconds) + 'seconds ago';
         }
 
         return {
             showEnroll, showEnroll2, showEnroll3,
             toggleEnroll, toggleEnroll2, toggleEnroll3,
-            postTime
+            timeAgo,
+            dollarRate
         }
     }
     
@@ -117,23 +146,15 @@ export default {
 </script>
 
 <style scoped>
-.hhh-enter-from {
+.hhh-enter-from, .hhh-leave-to {
     height: 0px;
+    opacity: 0;
 }
-.hhh-enter-to {
-    height: 200px
-}
-.hhh-enter-active {
-    transition: 0.2s linear;
-}
-.hhh-leave-from {
+.hhh-enter-to, .hhh-leave-from {
     height: 200px;
+    opacity: 1;
 }
-.hhh-leave-to {
-    height: 0px
+.hhh-enter-active, .hhh-leave-active {
+    transition: all 0.2s linear;
 }
-.hhh-leave-active {
-    transition: 0.2s linear;
-}
-
 </style>

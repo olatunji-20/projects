@@ -22,7 +22,7 @@
                 </div>
                 <div class="border-4 mt-2 w-[100%] h-[auto] md:w-[22%]">
                     <p class="text-md">Current Total Transferred</p>
-                    <p class="text-[19px] font-bold mt-2">55,000 KEH ($33,000)</p>
+                    <p class="text-[19px] font-bold mt-2"><span class="line-through">N</span>{{ profileStore.profile.firstPaymentAmount + profileStore.profile.finalPaymentAmount }} (${{ ((profileStore.profile.firstPaymentAmount + profileStore.profile.finalPaymentAmount)/dollarRate).toFixed(2) }})</p>
                 </div>
                 <div class="border-4 mt-2 w-[100%] h-[auto] md:w-[12%]">
                     <p class="text-md">Status</p>
@@ -55,6 +55,7 @@ import Navbar from '@/components/Navbar.vue';
 import Progress from '@/components/Progress.vue';
 import { useRoute } from 'vue-router';
 import { onMounted } from 'vue';
+import { ref } from 'vue';
 
 export default {
     name: 'Profile',
@@ -62,12 +63,15 @@ export default {
         const route = useRoute();
         const profileStore = useCounterStore();
 
+        const dollarRate = ref(1483);
+
         onMounted(async () => {
             await profileStore.getProfile(route.params.id)
         });
 
         return {
-            profileStore
+            profileStore,
+            dollarRate
         }
     },
     components: {
