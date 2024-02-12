@@ -18,7 +18,7 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2">
+    <div v-show="showEnroll" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2 overflow-hidden">
         <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
@@ -41,7 +41,7 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll2" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2">
+    <div v-show="showEnroll2" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2 overflow-hidden">
         <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
@@ -64,7 +64,7 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll3" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2">
+    <div v-show="showEnroll3" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2 overflow-hidden">
         <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>

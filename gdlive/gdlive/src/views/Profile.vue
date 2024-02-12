@@ -26,17 +26,18 @@
                 </div>
                 <div class="border-4 mt-2 w-[100%] h-[auto] md:w-[12%]">
                     <p class="text-md">Status</p>
-                    <p class="bg-green-200 w-[90px] text-center pb-1 rounded-full">ongoing</p>
+                    <p class="border-2 w-[90px] text-center pb-1 rounded-full" :class="profileStore.profile.status == 1 ? 'ongoing' : profileStore.profile.status == 2 ? 'subgoing' : 'completed'" v-text="profileStore.profile.status == 1 ? 'ongoing' : profileStore.profile.status == 2 ? 'ongoing' : 'completed'"></p>
                 </div>
                 <div class="border-4 mt-2 w-[100%] h-[auto] md:w-[22%]">
                     <p class="text-md">Upcoming Stage</p>
-                    <p class="text-[18px] font-bold mt-2">Next Payment</p>
+                    <p class="text-[18px] font-bold mt-2" v-show="profileStore.profile.status === 1 ? true : profileStore.profile.status === 2 ? true : false">TRANSFER</p>
+                    <p class="text-[18px] font-bold mt-2" v-show="profileStore.profile.status === 3 ? true : false">COMPLETED</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <Progress />
+    <Progress :progressDetails="profileStore.profile" />
 
     <div class="border-4 border-purple-600 bg-purple-200 w-[100%] h-[auto] py-8 px-2 my-16 mx-auto mb-48 md:w-[80%]">
         <h3 class="font-bold text-lg">Activities</h3>
@@ -83,6 +84,14 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.ongoing {
+    @apply bg-red-500 text-gray-100;
+}
+.subgoing {
+    @apply bg-yellow-400 text-gray-600;
+}
+.completed {
+    @apply bg-green-600 text-gray-100;
+}
 </style>
