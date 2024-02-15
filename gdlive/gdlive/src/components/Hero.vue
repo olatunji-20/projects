@@ -9,14 +9,14 @@
     </div>
     <div class="border-4 border-green-700 w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
         <div class="border-2 border-orange-500 w-[400px] h-[400px] m-[auto] flex justify-center items-center md:w-[540px] md:h-[540px]">
-            <div class="border-4 border-blue-800 w-[95%] h-[95%] rounded-full flex">
-                <div class="border-4 border-blue-500 w-[75%] h-[75%] rounded-full m-[auto] flex">
+            <div class="border border-blue-800 w-[95%] h-[95%] rounded-full flex">
+                <div class="border-2 border-blue-500 w-[75%] h-[75%] rounded-full m-[auto] flex">
                     <div class="border-4 border-blue-400 w-[60%] h-[60%] rounded-full m-[auto] flex">
-                        <div class="border-4 border-blue-400 w-[60px] h-[60px] rounded-full m-[auto]">
-                            <div class="border-4 border-red-600 w-[150px] h-[150px] relative rounded-full bottom-40 right-40"></div>
-                            <div class="border-4 border-red-900 w-[80px] h-[80px] relative rounded-full left-32 bottom-56"></div>
-                            <div class="border-4 border-pink-300 w-[100px] h-[100px] relative rounded-full right-40 bottom-40"></div>
-                            <div class="border-4 border-purple-900 w-[120px] h-[120px] relative rounded-full left-24 bottom-64"></div>
+                        <div class="border-4 border-blue-400 w-[40px] h-[40px] rounded-full m-[auto] bg-blue-500">
+                            <div class="border-8 border-red-600 w-[150px] h-[150px] relative rounded-full bottom-40 right-40"></div>
+                            <div class="border-8 border-red-900 w-[80px] h-[80px] relative rounded-full left-32 bottom-56"></div>
+                            <div class="border-8 border-pink-300 w-[100px] h-[100px] relative rounded-full right-40 bottom-40"></div>
+                            <div class="border-8 border-purple-900 w-[120px] h-[120px] relative rounded-full left-24 bottom-64"></div>
                         </div>
                     </div>
                 </div>

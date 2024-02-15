@@ -151,7 +151,7 @@ export default {
     opacity: 0;
 }
 .hhh-enter-to, .hhh-leave-from {
-    height: 200px;
+    height: 120px;
     opacity: 1;
 }
 .hhh-enter-active, .hhh-leave-active {
