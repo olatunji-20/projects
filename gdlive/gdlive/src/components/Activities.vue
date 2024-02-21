@@ -13,7 +13,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.finalPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll" >V</p>
+        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll" ><span v-if="showEnroll">A</span><span v-else>V</span></p>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.firstPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll2" >V</p>
+        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll2"><span v-if="showEnroll2">A</span><span v-else>V</span></p>
     </div>
   </div>
 
@@ -59,7 +59,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.enrollmentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3" >V</p>
+        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3"><span v-if="showEnroll3">A</span><span v-else>V</span></p>
     </div>
   </div>
 
@@ -83,7 +83,7 @@ export default {
         const showEnroll = ref(false);
         const showEnroll2 = ref(false);
         const showEnroll3 = ref(false);
-        const dollarRate = ref(1483)
+        const dollarRate = ref(1843)
 
         const toggleEnroll = () => {
             showEnroll.value = !showEnroll.value

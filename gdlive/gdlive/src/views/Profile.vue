@@ -64,7 +64,7 @@ export default {
         const route = useRoute();
         const profileStore = useCounterStore();
 
-        const dollarRate = ref(1483);
+        const dollarRate = ref(1843);
 
         onMounted(async () => {
             await profileStore.getProfile(route.params.id)
