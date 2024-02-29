@@ -8,7 +8,12 @@
         <p class="font-bold pt-12">Learn about how we collect stories L</p>
     </div>
     <div class="border-4 border-green-700 w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
-        <div class="border-2 border-orange-500 w-[400px] h-[400px] m-[auto] flex justify-center items-center md:w-[540px] md:h-[540px]">
+        <div class="border-8 border-orange-500 w-[400px] h-[400px] m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
+            <div class="border-2 border-green-900 bg-purple-400 rounded-full h-[10px] w-[10px] absolute bottom-8"></div>
+            <div class="border-2 border-green-900 bg-purple-400 rounded-full h-[15px] w-[15px] absolute right-16"></div>
+            <div class="border-2 border-green-900 bg-purple-400 rounded-full h-[20px] w-[20px] absolute left-12"></div>
+            <div class="border-2 border-green-900 bg-purple-400 rounded-full h-[20px] w-[20px] absolute top-16"></div>
+            <div class="border-2 border-green-900 bg-purple-400 rounded-full h-[5px] w-[5px] absolute top-32"></div>
             <div class="border border-blue-800 w-[95%] h-[95%] rounded-full flex">
                 <div class="border-2 border-blue-500 w-[75%] h-[75%] rounded-full m-[auto] flex">
                     <div class="border-4 border-blue-400 w-[60%] h-[60%] rounded-full m-[auto] flex">
