@@ -9,11 +9,15 @@
     </div>
     <div class="border-4 border-green-700 w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
         <div class="border-8 border-orange-500 w-[400px] h-[400px] m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
-            <div class="border-2 border-green-900 bg-purple-400 rounded-full h-[10px] w-[10px] absolute bottom-8"></div>
+
+            <div class="border-2 border-green-900 bg-red-400 rounded-full h-[10px] w-[10px] absolute"></div>
+
             <div class="rot3 border-2 border-green-900 bg-purple-400 rounded-full h-[15px] w-[15px] absolute"></div>
             <div class="rot border-2 border-green-400 bg-red-600 rounded-full h-[20px] w-[20px] absolute"></div>
             <div class="rot2 border-2 border-green-900 bg-green-400 rounded-full h-[20px] w-[20px] absolute"></div>
-            <div class="border-2 border-green-900 bg-purple-400 rounded-full h-[5px] w-[5px] absolute top-32"></div>
+
+            <div class="zig border-2 border-green-900 bg-red-700 rounded-full h-[5px] w-[5px] absolute top-8 right-8"></div>
+
             <div class="border border-blue-800 w-[95%] h-[95%] rounded-full flex">
                 <div class="border-2 border-blue-500 w-[75%] h-[75%] rounded-full m-[auto] flex">
                     <div class="border-4 border-blue-400 w-[60%] h-[60%] rounded-full m-[auto] flex">
@@ -94,6 +98,30 @@ export default {
     }
 }
 
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+        transform: translateY(0px)
+        /* left: 10px; */
+        /* bottom: 100px; */
+    }
+    20% {
+        transform: translateX(-450px);
+        transform: translateY(50px);
+        /* transform: translateY(50px); */
+    }
+    50% {
+        /* transform: translateX(400px);
+        transform: translateY(50px); */
+    }
+    
+    100% {
+        /* transform: translateX(-400px) */
+        /* right: 10px; */
+        /* bottom: 900px; */
+    }
+}
+
 
 .rot {
     animation: orbit 4s linear infinite;   
@@ -103,5 +131,8 @@ export default {
 }
 .rot3 {
     animation: orbit3 4s linear infinite;   
+}
+.zig  {
+    animation: move 2s linear infinite;
 }
 </style>
