@@ -10,7 +10,7 @@
       <h5>GiveDirectly Home</h5>
     </div>
     <div class="w-[160px] h-[50px] hidden md:inline">
-      <button class="bg-teal-300 w-[100%] h-[100%] rounded-md text-white">Give Now</button>
+      <button class="bg-teal-300 w-[100%] h-[100%] rounded-md text-white hover:bg-red-500 duration-200">Give Now</button>
     </div>
   </header>
 </template>
