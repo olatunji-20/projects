@@ -9,7 +9,7 @@
             </div> 
             <div class="border-2 border-pink-300 bg-white w-[100px] h-[40px]">IC</div>
         </div>
-        <div class="border-2 border-rose-500 w-[100%] h-[auto] mt-16">
+        <div class="border-2 border-rose-500 w-[100%] h-[auto] mt-16" data-aos="fade-out">
             <EachStory />
         </div>
         <div class="w-[100%] h-[50px] mx-auto my-12 text-center md:w-[250px]">
@@ -19,7 +19,14 @@
 </template>
 
 <script>
-import EachStory from '../components/EachStory.vue'
+import EachStory from '../components/EachStory.vue';
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+});
 
 export default {
     name: 'Stories',
