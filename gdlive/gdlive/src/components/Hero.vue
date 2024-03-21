@@ -1,7 +1,7 @@
 <template>
   <main class="border-4 border-purple-500 bg-gray-600 w-[100%] h-[auto] flex flex-col justify-start pb-72 md:flex-row md:justify-center md:pb-48">
     <div class="border-4 border-green-500 w-[100%] h-[400px]  md:w-[38%] px-4 py-12 md:h-[550px] md:px-12 md:pt-28">
-        <h1 class="font-bold text-[40px] inline">Unfiltered, Unedited </h1><h1 class="px-1 font-bold text-[40px] inline-block" style="background-image: url(/img/vector.svg); background-repeat: no-repeat; background-position-y: bottom;">Stories</h1>
+        <h1 class="font-bold text-[40px] inline">Unfiltered, Unedited </h1><h1 class="px-1 font-bold text-[40px] text-orange-500 inline-block" style="background-image: url(/img/vector.svg); background-repeat: no-repeat; background-position-y: bottom;">Stories</h1>
         <p class="pt-4">We're committed to transparency and the use of our survey technology to collect and share real-time updates and stories
             in this live newsfeed.
         </p>
@@ -19,11 +19,12 @@
             <div class="border border-blue-800 w-[95%] h-[95%] rounded-full flex">
                 <div class="border-2 border-blue-500 w-[75%] h-[75%] rounded-full m-[auto] flex">
                     <div class="border-4 border-blue-400 w-[60%] h-[60%] rounded-full m-[auto] flex">
-                        <div class="border-4 border-blue-400 w-[40px] h-[40px] rounded-full m-[auto] bg-blue-500">
-                            <div class="border-8 border-red-600 w-[150px] h-[150px] relative rounded-full bottom-40 right-40"></div>
-                            <div class="border-8 border-red-900 w-[80px] h-[80px] relative rounded-full left-32 bottom-56"></div>
-                            <div class="border-8 border-pink-300 w-[100px] h-[100px] relative rounded-full right-40 bottom-40"></div>
-                            <div class="border-8 border-purple-900 w-[120px] h-[120px] relative rounded-full left-24 bottom-64"></div>
+                        <div class="border-2 border-orange-400 w-[40px] h-[40px] rounded-full m-[auto] bg-gray-100 p-1">
+                            <img src="/img/quotes.svg" class="h-[100%] w-[100%] object-contain" />
+                            <div data-aos="fade-right" class="w-[150px] h-[150px] relative rounded-full bottom-40 right-40"><img src="/img/woman.svg" class="h-[100%] w-[100%] object-contain" /></div>
+                            <div data-aos="fade-up" class="w-[80px] h-[80px] relative rounded-full left-32 bottom-56"><img src="/img/man.svg" class="h-[100%] w-[100%] object-contain" /></div>
+                            <div data-aos="fade-down" class="border-4 w-[100px] h-[100px] relative rounded-full right-40 bottom-40"><img src="/img/smilelady.svg" class="h-[100%] w-[100%] object-contain" /></div>
+                            <div data-aos="fade-left" class="w-[120px] h-[120px] relative rounded-full left-24 bottom-64"><img src="/img/hoeman.svg" class="h-[100%] w-[100%] object-contain" /></div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +41,7 @@
     </div>
     <div class="border-4 border-red-500 w-[100%] h-[auto] px-4 py-16 flex flex-col md:flex-row md:py-32 md:px-12">
         <div class="border-2 border-fuchsia-500 w-[85%] h-[auto] mx-auto text-center md:w-[35%] md:text-left">
-            <h3 class="font-bold text-xl">Explore Recipients</h3>
+            <h3 data-aos="slide-up" class="font-bold text-xl">Explore Recipients</h3>
             <p class="pt-6">Browse the real, unedited profiles of the recipients we serve, learn about their aspirations and follow them to stay updated as their
                  lives move forward.
             </p>
@@ -61,6 +62,13 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+});
+
 export default {
     name: "Hero"
 
