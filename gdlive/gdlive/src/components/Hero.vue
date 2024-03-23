@@ -12,7 +12,7 @@
         <p class="pt-4">We're committed to transparency and the use of our survey technology to collect and share real-time updates and stories
             in this live newsfeed.
         </p>
-        <p class="font-bold pt-8">Learn about how we collect stories L</p>
+        <p class="font-bold pt-8">Learn about how we collect stories <span><i class="material-symbols-outlined relative top-2 font-bold">start</i></span></p>
     </div>
     <div class="border-4 border-green-700 w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
         <div class="border-8 border-orange-500 w-[400px] h-[400px] overflow-hidden m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
@@ -39,7 +39,7 @@
         </div>
     </div>
 </main>
-<div class="border-4 border-teal-900 w-[100%] h-[auto]">
+<div class="border-4 border-teal-900 w-[100%] h-[auto] pt-20">
     <div class="border-2 border-blue-400 w-[80%] bg-blue-200 h-[auto] mx-[auto] relative bottom-36 rounded-[40px] p-8 flex flex-col md:flex-row md:bottom-12" data-aos="fade-up">
         <h2 class="text-green-800 font-bold text-xl mx-auto my-4 md:w-[500px]">GDLive Newsfeed</h2>
         <p class="text-center md:text-left">We check in with people at each stage of the cash transfer process to see how things are going. Take a look at some of their stories as they

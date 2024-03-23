@@ -2,7 +2,7 @@
 
   <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between">
     <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
-        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full"></div>
+        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">paid</i></div>
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Final Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
@@ -13,7 +13,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.finalPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll" ><span v-if="showEnroll">A</span><span v-else>V</span></p>
+        <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll" ><span v-if="showEnroll"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
     </div>
   </div>
 
@@ -25,7 +25,7 @@
 
   <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between">
     <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
-        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full"></div>
+        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">payments</i></div>
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Initial Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
@@ -36,7 +36,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.firstPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll2"><span v-if="showEnroll2">A</span><span v-else>V</span></p>
+        <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll2"><span v-if="showEnroll2"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
     </div>
   </div>
 
@@ -48,7 +48,7 @@
 
   <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between">
     <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
-        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full"></div>
+        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">how_to_reg</i></div>
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Enrolled</h3>
             <p class="font-bold mt-4">Location</p>
@@ -59,7 +59,7 @@
     <div class="border-4 border-red-500 w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.enrollmentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border-2 border-green-500 px-2 cursor-pointer" @click="toggleEnroll3"><span v-if="showEnroll3">A</span><span v-else>V</span></p>
+        <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll3"><span v-if="showEnroll3"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
     </div>
   </div>
 

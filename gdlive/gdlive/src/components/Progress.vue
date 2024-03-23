@@ -4,18 +4,18 @@
         <div class="border-2 border-red-300 w-[100%] h-[100px] my-4 flex flex-row flex-nowrap items-center justify-evenly md:w-[70%]">
 
             <div class="border-2 border-blue-400 w-[33%] h-[80px] flex flex-row items-center md:w-[33%]">
-                <div :class="progressDetails.status >= 1 ? 'done' : 'undone'" class="border-dashed border-4 border-purple-500 w-[50px] h-[50px] rounded-full md:w-[70px] md:h-[70px]"></div>
+                <div :class="progressDetails.status >= 1 ? 'done' : 'undone'" class="border-dashed border-4 border-purple-500 w-[50px] h-[50px] rounded-full md:w-[70px] md:h-[70px]"><i class="material-symbols-outlined font-bold text-center text-[40px] md:text-[60px]">how_to_reg</i></div>
                 <p :class="progressDetails.status >= 1 ? 'done-text' : 'undone-text'" class="pl-1 text-sm md:pl-4">Enrollment</p>
             </div>
             
 
             <div class="border-2 border-blue-400 w-[33%] h-[80px] flex flex-row items-center md:w-[33%]">
-                <div :class="progressDetails.status >= 2 ? 'done' : 'undone'" class="border-dashed border-4 border-purple-500 w-[50px] h-[50px] rounded-full md:w-[70px] md:h-[70px]"></div>
+                <div :class="progressDetails.status >= 2 ? 'done' : 'undone'" class="border-dashed border-4 border-purple-500 w-[50px] h-[50px] rounded-full md:w-[70px] md:h-[70px]"><i class="material-symbols-outlined font-bold text-center text-[40px] md:text-[60px]">payments</i></div>
                 <p :class="progressDetails.status >= 2 ? 'done-text' : 'undone-text'" class="pl-1 text-sm md:pl-4">Transfer</p>
             </div>
 
             <div class="border-2 border-blue-400 w-[33%] h-[80px] flex flex-row items-center md:w-[33%]">
-                <div :class="progressDetails.status >= 3 ? 'done' : 'undone'" class="border-dashed border-4 border-purple-500 w-[50px] h-[50px] rounded-full md:w-[70px] md:h-[70px]"></div>
+                <div :class="progressDetails.status >= 3 ? 'done' : 'undone'" class="border-dashed border-4 border-purple-500 w-[50px] h-[50px] rounded-full md:w-[70px] md:h-[70px]"><i class="material-symbols-outlined font-bold text-center text-[40px] md:text-[60px]">paid</i></div>
                 <p :class="progressDetails.status >= 3 ? 'done-text' : 'undone-text'" class="pl-1 text-sm md:pl-4">Completed</p>
             </div>
 
