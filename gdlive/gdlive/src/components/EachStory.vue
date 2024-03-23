@@ -1,7 +1,7 @@
 <template>
-  <div class="border-4 border-blue-400 w-[100%] h-[100%] flex flex-col justify-between px-1 md:flex-row flex-wrap">
-
-    <div v-for="p in profileStore.profiles" :key="p.id" class="border-2 border-red-300 bg-white rounded-md w-[100%] h-[auto] pb-2 p-1 my-4 overflow-hidden text-wrap md:w-[300px] md:h-[auto]">
+  <div class="border-2 border-blue-400 w-[100%] h-[100%] flex flex-col justify-between px-1 md:flex-row flex-wrap">
+    <Preloader v-if="profileStore.profiles.length == 0" />
+    <div v-else v-for="p in profileStore.profiles" :key="p.id" class="border-2 border-red-300 bg-white rounded-md w-[100%] h-[auto] pb-2 p-1 my-4 overflow-hidden text-wrap md:w-[300px] md:h-[auto]">
         <router-link :to="/profile/ + `${p.id}`">
             <div class="border-2 border-blue-300 w-[100%] h-[200px] overflow-hidden">
                 <img :src="p.coverImage" class="h-[100%] w-[100%] object-fill hover:scale-150 duration-500" />
@@ -17,6 +17,7 @@
 
 <script>
 import { useCounterStore } from '@/stores/counter';
+import Preloader from '../components/Preloader.vue'
 
 export default {
     name: "EachStory",
@@ -66,6 +67,9 @@ export default {
             profileStore,
             timeAgo
         }
+    },
+    components: {
+        Preloader
     }
 
 }

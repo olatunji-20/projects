@@ -1,6 +1,6 @@
 <template>
   <main class="border-4 border-purple-500 bg-gray-600 w-[100%] h-[auto] flex flex-col justify-start pb-72 md:flex-row md:justify-center md:pb-48">
-    <div class="border-4 border-green-500 w-[100%] h-[400px]  md:w-[40%] py-12 md:h-[550px] md:px-8 md:pt-28">
+    <div class="border-4 border-green-500 w-[100%] h-[400px] px-4 md:w-[40%] py-12 md:h-[550px] md:px-8 md:pt-28">
 
         <div class="border-2 w-[100%] h-[130px]">
             <h1 class="text-[42px] leading-14 text-red-500 font-bold">
@@ -15,7 +15,7 @@
         <p class="font-bold pt-8">Learn about how we collect stories L</p>
     </div>
     <div class="border-4 border-green-700 w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
-        <div class="border-8 border-orange-500 w-[400px] h-[400px] m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
+        <div class="border-8 border-orange-500 w-[400px] h-[400px] overflow-hidden m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
 
             <div class="zig border-2 border-green-900 bg-red-400 rounded-full h-[10px] w-[10px] absolute"></div>
 
@@ -46,7 +46,7 @@
             appear here in real-time. Learn more about how recipients opt in to share their stories.
         </p>
     </div>
-    <div class="border-4 border-red-500 w-[100%] h-[auto] px-4 py-16 flex flex-col md:flex-row md:py-32 md:px-12">
+    <div class="border-4 border-red-500 w-[100%] h-[auto] overflow-hidden px-4 py-16 flex flex-col md:flex-row md:py-32 md:px-12">
         <div class="border-2 border-fuchsia-500 w-[85%] h-[auto] mx-auto text-center md:w-[35%] md:text-left">
             <h3 data-aos="slide-right" class="font-bold text-xl">Explore Recipients</h3>
             <p class="pt-6">Browse the real, unedited profiles of the recipients we serve, learn about their aspirations and follow them to stay updated as their
