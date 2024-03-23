@@ -1,15 +1,18 @@
 <template>
   <main class="border-4 border-purple-500 bg-gray-600 w-[100%] h-[auto] flex flex-col justify-start pb-72 md:flex-row md:justify-center md:pb-48">
-    <div class="border-4 border-green-500 w-[100%] h-[400px]  md:w-[38%] px-4 py-12 md:h-[550px] md:px-12 md:pt-28">
-        <h1 class="text-6xl font-bold">
-            <vueTyperNext  data="Unfiltered, Unedited" class="sss text-9xl font-bold inline" typeSpeed="200" handlerNum="70" />
-        </h1>
+    <div class="border-4 border-green-500 w-[100%] h-[400px]  md:w-[40%] py-12 md:h-[550px] md:px-8 md:pt-28">
 
-        <h1 class="px-1 font-bold text-[40px] text-orange-500 inline-block" style="background-image: url(/img/vector.svg); background-repeat: no-repeat; background-position-y: bottom;">Stories</h1>
+        <div class="border-2 w-[100%] h-[130px]">
+            <h1 class="text-[42px] leading-14 text-red-500 font-bold">
+                <vue-typewriter-effect :strings="'Unfiltered, Unedited Stories'" />
+            </h1>
+        </div>
+
+        <!-- <h1 class="px-1 font-bold text-[40px] text-orange-500 inline-block" style="background-image: url(/img/vector.svg); background-repeat: no-repeat; background-position-y: bottom;"><vue-typewriter-effect :strings="'Stories'" /></h1> -->
         <p class="pt-4">We're committed to transparency and the use of our survey technology to collect and share real-time updates and stories
             in this live newsfeed.
         </p>
-        <p class="font-bold pt-12">Learn about how we collect stories L</p>
+        <p class="font-bold pt-8">Learn about how we collect stories L</p>
     </div>
     <div class="border-4 border-green-700 w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
         <div class="border-8 border-orange-500 w-[400px] h-[400px] m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
@@ -51,23 +54,23 @@
             </p>
         </div>
         <div class="border-2 border-green-400 w-[90%] h-[30px] my-12 mx-auto flex flex-row flex-nowrap justify-between items-center md:w-[35%] relative md:top-12">
-            <img src="/img/Nigeria.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/USA.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/Malawi.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/Mozambiq.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/Kenya.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/Togo.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/Turkey.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/Liberia.png" class="border-2 h-[25px] w-[30px]" />
-            <img src="/img/Yemen.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="fade-down-right" src="/img/Nigeria.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="fade-up" src="/img/USA.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="fade-left" src="/img/Malawi.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="slide-down" src="/img/Mozambiq.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="slide-left" src="/img/Kenya.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="slide-up" src="/img/Togo.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="fade-right" src="/img/Turkey.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="fade-down" src="/img/Liberia.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="fade-up-left" src="/img/Yemen.png" class="border-2 h-[25px] w-[30px]" />
         </div>
     </div>
 </div>
 </template>
 
 <script>
-import { vueTyperNext } from "vue-typer-next";
-import "vue-typer-next/dist/style.css";
+
+import VueTypewriterEffect from "vue-typewriter-effect";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -79,7 +82,7 @@ AOS.init({
 export default {
     name: "Hero",
     components: {
-        vueTyperNext
+        VueTypewriterEffect
     }
 
 }
@@ -143,11 +146,5 @@ export default {
 }
 .zig  {
     animation: move 4s linear infinite;
-}
-
-
-.sss {
-    font-size: 60px;
-    color: red
 }
 </style>

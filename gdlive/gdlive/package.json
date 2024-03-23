@@ -15,7 +15,7 @@
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5",
-    "vue-typer-next": "^1.0.1"
+    "vue-typewriter-effect": "^1.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
