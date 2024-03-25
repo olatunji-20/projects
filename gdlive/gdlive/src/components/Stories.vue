@@ -7,7 +7,10 @@
                     <input placeholder="search name, country or region  " class="w-[100%] h-[100%] indent-2" />
                 </div>
             </div> 
-            <div class="border-2 border-pink-300 bg-white w-[100px] h-[40px] text-center"><i class="material-symbols-outlined font-bold text-[30px]">home_max_dots</i></div>
+            <div class="border-2 border-pink-300 bg-red-200 w-[100px] h-[40px] text-center">
+                <img src="/img/gdlive.svg" class="w-[100%] h-[100%]" />
+                <!-- <i class="material-symbols-outlined font-bold text-[30px]">home_max_dots</i> -->
+            </div>
         </div>
         <div class="border-2 border-rose-500 w-[100%] h-[auto] mt-16" data-aos="fade-out">
             <EachStory />
