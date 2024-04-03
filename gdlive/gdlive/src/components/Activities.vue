@@ -23,7 +23,7 @@
     </div>
   </transition>
 
-  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between" data-aos="slide-up">
+  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between" data-aos="slide-up" data-aos-delay="300">
     <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
         <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">payments</i></div>
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
@@ -46,7 +46,7 @@
     </div>
   </transition>
 
-  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between" data-aos="slide-up">
+  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between" data-aos="slide-up" data-aos-delay="500">
     <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
         <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">how_to_reg</i></div>
         <div class="border-2 border-green-500 w-[70%] h-[100%]">
