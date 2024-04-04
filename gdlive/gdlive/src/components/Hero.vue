@@ -1,6 +1,6 @@
 <template>
-  <main class="border-4 border-purple-500 bg-gray-600 w-[100%] h-[auto] flex flex-col justify-start pt-16 pb-72 md:flex-row md:justify-center md:pb-48">
-    <div class="border-4 border-green-500 w-[100%] h-[400px] px-4 md:w-[40%] py-12 md:h-[550px] md:px-8 md:pt-20">
+  <main class="bg-[#4D4D4D] w-[100%] h-[auto] flex flex-col justify-start pt-16 pb-72 md:flex-row md:justify-center md:pb-48">
+    <div class="border-4 border-green-500 w-[100%] h-[400px] text-white px-4 md:w-[40%] py-12 md:h-[550px] md:px-8 md:pt-20">
 
         <div class="border-2 w-[100%] h-[130px]">
             <h1 class="text-[42px] leading-14 text-red-500 font-bold">
@@ -12,7 +12,7 @@
         <p class="pt-4">We're committed to transparency and the use of our survey technology to collect and share real-time updates and stories
             in this live newsfeed.
         </p>
-        <p class="font-bold pt-8">Learn about how we collect stories <span><i class="material-symbols-outlined relative top-2 font-bold">start</i></span></p>
+        <p class="font-bold pt-8 text-[#6B9B8F]">Learn about how we collect stories <span><i class="material-symbols-outlined relative top-2 font-bold">start</i></span></p>
     </div>
     <div class="border-4 border-green-700 w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
         <div class="border-8 border-orange-500 w-[400px] h-[400px] overflow-hidden m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
@@ -26,7 +26,7 @@
             <div class="border border-blue-800 w-[95%] h-[95%] rounded-full flex">
                 <div class="border-2 border-blue-500 w-[75%] h-[75%] rounded-full m-[auto] flex">
                     <div class="border-4 border-blue-400 w-[60%] h-[60%] rounded-full m-[auto] flex">
-                        <div class="border-2 border-orange-400 w-[40px] h-[40px] rounded-full m-[auto] bg-gray-100 p-1">
+                        <div class="border-2 border-orange-400 w-[40px] h-[40px] rounded-full m-[auto] bg-gray-100 p-2">
                             <img src="/img/quotes.svg" class="h-[100%] w-[100%] object-contain" />
                             <div data-aos="fade-up-left" class="w-[150px] border-4 border-red-400 h-[150px] relative rounded-full bottom-40 right-40">
                                 <img src="/img/woman.svg" class="h-[100%] w-[100%] object-contain" />
@@ -47,21 +47,21 @@
         </div>
     </div>
 </main>
-<div class="border-4 border-teal-900 w-[100%] h-[auto] pt-20">
-    <div class="border-2 border-blue-400 w-[80%] bg-blue-200 h-[auto] mx-[auto] relative bottom-36 rounded-[40px] p-8 flex flex-col md:flex-row md:bottom-12" data-aos="fade-up">
-        <h2 class="text-green-800 font-bold text-xl mx-auto my-4 md:w-[500px]">GDLive Newsfeed</h2>
+<div class="w-[100%] h-[auto] pt-20">
+    <div class="w-[80%] bg-white h-[auto] mx-[auto] relative border-b-4 bottom-36 rounded-[40px] p-8 flex flex-col md:flex-row md:bottom-36" data-aos="fade-up">
+        <h2 class="text-[#6B9B8F] font-bold text-xl mx-auto my-4 md:w-[500px]">GDLive Newsfeed</h2>
         <p class="text-center md:text-left">We check in with people at each stage of the cash transfer process to see how things are going. Take a look at some of their stories as they
             appear here in real-time. Learn more about how recipients opt in to share their stories.
         </p>
     </div>
-    <div class="border-4 border-red-500 w-[100%] h-[auto] overflow-hidden px-4 py-16 flex flex-col md:flex-row md:py-32 md:px-12">
-        <div class="border-2 border-fuchsia-500 w-[85%] h-[auto] mx-auto text-center md:w-[35%] md:text-left">
+    <div class="w-[100%] h-[auto] overflow-hidden px-4 py-16 flex flex-col md:flex-row md:py-32 md:px-12">
+        <div class="w-[85%] h-[auto] mx-auto text-center md:w-[35%] md:text-left">
             <h3 data-aos="slide-right" class="font-bold text-xl">Explore Recipients</h3>
             <p class="pt-6">Browse the real, unedited profiles of the recipients we serve, learn about their aspirations and follow them to stay updated as their
                  lives move forward.
             </p>
         </div>
-        <div class="border-2 border-green-400 w-[90%] h-[30px] my-12 mx-auto flex flex-row flex-nowrap justify-between items-center md:w-[35%] relative md:top-12">
+        <div class="w-[90%] h-[30px] my-12 mx-auto flex flex-row flex-nowrap justify-between items-center md:w-[35%] relative md:top-12">
             <img data-aos="fade-down-right" src="/img/Nigeria.png" class="border-2 h-[25px] w-[30px]" />
             <img data-aos="fade-up" src="/img/USA.png" class="border-2 h-[25px] w-[30px]" />
             <img data-aos="fade-left" src="/img/Malawi.png" class="border-2 h-[25px] w-[30px]" />
