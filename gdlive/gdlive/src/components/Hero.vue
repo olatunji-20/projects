@@ -8,7 +8,6 @@
             </h1>
         </div>
 
-        <!-- <h1 class="px-1 font-bold text-[40px] text-orange-500 inline-block" style="background-image: url(/img/vector.svg); background-repeat: no-repeat; background-position-y: bottom;"><vue-typewriter-effect :strings="'Stories'" /></h1> -->
         <p class="pt-4">We're committed to transparency and the use of our survey technology to collect and share real-time updates and stories
             in this live newsfeed.
         </p>
