@@ -1,7 +1,7 @@
 <template>
-    <main class="bg-gray-200 w-[100%] h-[auto] py-12 px-4 md:p-32">
+    <main class="bg-gray-100 w-[100%] h-[auto] py-12 px-4 md:p-32">
         <div class="w-[100%] h-[40px] flex flex-row no-wrap justify-between items-center">
-            <div class="rounded-md w-[auto] h-[auto] p-0.5 bg-gray-100 flex flex-row flex-nowrap">
+            <div class="rounded-md w-[auto] h-[auto] p-0.5 bg-gray-50 flex flex-row flex-nowrap">
                 <div class="w-[30px] h-[30px] cursor-pointer text-center pt-0.5"><i class="material-symbols-outlined font-bold">search</i></div>
                 <div class="h-[30px] w-[350px] ml-2">
                     <input placeholder="search name, country or region" class="bg-transparent w-[100%] h-[100%] text-xs indent-2" />
@@ -11,7 +11,7 @@
                 <img src="/img/gdlive.svg" class="w-[100%] h-[100%]" />
             </div>
         </div>
-        <div class="border-2 border-rose-500 w-[100%] h-[auto] mt-12" data-aos="fade-out">
+        <div class="w-[100%] h-[auto] mt-12" data-aos="fade-out">
             <EachStory />
         </div>
         <div class="w-[100%] h-[50px] mx-auto my-12 text-center md:w-[250px]">

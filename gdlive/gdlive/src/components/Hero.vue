@@ -28,16 +28,16 @@
                         <div class="border-2 border-orange-400 w-[40px] h-[40px] rounded-full m-[auto] bg-gray-100 p-2">
                             <img src="/img/quotes.svg" class="h-[100%] w-[100%] object-contain" />
                             <div data-aos="fade-up-left" class="w-[150px] border-4 border-red-400 h-[150px] relative rounded-full bottom-40 right-40">
-                                <img src="/img/woman.svg" class="h-[100%] w-[100%] object-contain" />
+                                <img src="/img/aaa.png" class="h-[100%] w-[100%] object-contain" />
                             </div>
                             <div data-aos="fade-up-right" class="w-[80px] border-4 border-blue-400 h-[80px] relative rounded-full left-28 bottom-60">
-                                <img src="/img/man.svg" class="h-[100%] w-[100%] object-contain" />
+                                <img src="/img/aad.png" class="h-[100%] w-[100%] object-contain" />
                             </div>
                             <div data-aos="fade-down-left" class="w-[100px] border-4 border-red-400 h-[100px] relative rounded-full right-40 bottom-40">
-                                <img src="/img/smilelady.svg" class="h-[100%] w-[100%] object-contain" />
+                                <img src="/img/aab.png" class="h-[100%] w-[100%] object-contain" />
                             </div>
                             <div data-aos="fade-down-right" class="w-[120px] border-4 border-red-400 h-[120px] relative rounded-full left-24 bottom-64">
-                                <img src="/img/hoeman.svg" class="h-[100%] w-[100%] object-contain" />
+                                <img src="/img/aac.png" class="h-[100%] w-[100%] object-contain" />
                             </div>
                         </div>
                     </div>
