@@ -1,16 +1,16 @@
 <template>
 
-  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between" data-aos="slide-up">
-    <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
-        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">paid</i></div>
-        <div class="border-2 border-green-500 w-[70%] h-[100%]">
+  <div class="w-[100%] h-[150px] text-[#26734d] rounded-md bg-[#E4EEEC] pt-4 px-2 mt-6 mb-2 flex flex-row justify-between hover:bg-[#baeee3] cursor-pointer hover:duration-500" data-aos="slide-up">
+    <div class="w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
+        <div class="w-[70px] bg-[#6B9B8F] h-[70px] rounded-full pt-2 text-center align-middle"><i class="material-symbols-outlined text-white text-[50px]">paid</i></div>
+        <div class="w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Final Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
             <p class="text-sm font-bold"><span class="line-through">N</span>{{ paymentInfo.finalPaymentAmount }} (${{ ((paymentInfo.finalPaymentAmount)/dollarRate).toFixed(2) }})</p>
             <p class="text-sm mt-4 md:hidden">{{ timeAgo(paymentInfo.finalPaymentTime) }}</p>
         </div>
     </div>
-    <div class="border-4 border-red-500 w-[25%] h-[100%]">
+    <div class="w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.finalPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll" ><span v-if="showEnroll"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
@@ -18,22 +18,22 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2 overflow-hidden">
+    <div v-show="showEnroll" class="border border-gray-200 rounded-md w-[100%] h-[auto] my-2 p-2 overflow-hidden">
         <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
 
-  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between" data-aos="slide-up" data-aos-delay="300">
-    <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
-        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">payments</i></div>
-        <div class="border-2 border-green-500 w-[70%] h-[100%]">
+  <div class="w-[100%] h-[150px] text-[#26734d] rounded-md bg-[#E4EEEC] pt-4 px-2 mt-6 mb-2 flex flex-row justify-between hover:bg-[#baeee3] cursor-pointer duration-500" data-aos="slide-up" data-aos-delay="300">
+    <div class="w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
+        <div class="w-[70px] bg-[#6B9B8F] h-[70px] rounded-full pt-2 text-center align-middle"><i class="material-symbols-outlined text-white text-[50px]">payments</i></div>
+        <div class="w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Initial Payment</h3>
             <p class="font-bold mt-4">Transfer Amount</p>
             <p class="text-sm font-bold"><span class="line-through">N</span>{{ paymentInfo.firstPaymentAmount }} (${{ ((paymentInfo.firstPaymentAmount)/dollarRate).toFixed(2) }})</p>
             <p class="text-sm mt-4 md:hidden">{{ timeAgo(paymentInfo.firstPaymentTime) }}</p>
         </div>
     </div>
-    <div class="border-4 border-red-500 w-[25%] h-[100%]">
+    <div class="w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.firstPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll2"><span v-if="showEnroll2"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
@@ -41,22 +41,22 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll2" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2 overflow-hidden">
+    <div v-show="showEnroll2" class="border border-gray-200 rounded-md w-[100%] h-[auto] my-2 p-2 overflow-hidden">
         <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
 
-  <div class="border-2 border-red-600 w-[100%] h-[150px] rounded-md bg-yellow-200 mt-6 mb-2 flex flex-row justify-between" data-aos="slide-up" data-aos-delay="500">
-    <div class="border-4 border-blue-500 w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
-        <div class="border-2 border-blue-500 w-[70px] h-[70px] rounded-full pt-1 text-center align-middle"><i class="material-symbols-outlined font-bold text-[60px]">how_to_reg</i></div>
-        <div class="border-2 border-green-500 w-[70%] h-[100%]">
+  <div class="w-[100%] h-[150px] text-[#26734d] rounded-md bg-[#E4EEEC] pt-4 px-2 mt-6 mb-2 flex flex-row justify-between hover:bg-[#baeee3] cursor-pointer duration-500" data-aos="slide-up" data-aos-delay="500">
+    <div class="w-[65%] h-[100%] flex flex-row flex-nowrap justify-between">
+        <div class="w-[70px] bg-[#6B9B8F] h-[70px] rounded-full pt-2 text-center align-middle"><i class="material-symbols-outlined text-white text-[50px]">how_to_reg</i></div>
+        <div class="w-[70%] h-[100%]">
             <h3 class="font-bold text-xl">Enrolled</h3>
             <p class="font-bold mt-4">Location</p>
             <p class="text-sm font-bold">Lagos, Nigeria</p>
             <p class="text-sm mt-4 md:hidden">{{ timeAgo(paymentInfo.enrollmentTime) }}</p>
         </div>
     </div>
-    <div class="border-4 border-red-500 w-[25%] h-[100%]">
+    <div class="w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.enrollmentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
         <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll3"><span v-if="showEnroll3"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
@@ -64,7 +64,7 @@
   </div>
 
   <transition name="hhh">
-    <div v-show="showEnroll3" class="border-2 border-purple-600 rounded-md w-[100%] h-[auto] bg-blue-100 my-2 p-2 overflow-hidden">
+    <div v-show="showEnroll3" class="border border-gray-200 rounded-md w-[100%] h-[auto] my-2 p-2 overflow-hidden">
         <h1>{{ paymentInfo.story }}</h1>
     </div>
   </transition>
