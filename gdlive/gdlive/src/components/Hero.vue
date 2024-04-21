@@ -61,15 +61,15 @@
             </p>
         </div>
         <div class="w-[90%] h-[30px] my-12 mx-auto flex flex-row flex-nowrap justify-between items-center md:w-[35%] relative md:top-12">
-            <img data-aos="fade-down-right" src="/img/Nigeria.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="fade-up" src="/img/USA.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="fade-left" src="/img/Malawi.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="slide-down" src="/img/Mozambiq.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="slide-left" src="/img/Kenya.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="slide-up" src="/img/Togo.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="fade-right" src="/img/Turkey.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="fade-down" src="/img/Liberia.png" class="border-2 h-[25px] w-[30px]" />
-            <img data-aos="fade-up-left" src="/img/Yemen.png" class="border-2 h-[25px] w-[30px]" />
+            <img data-aos="fade-down-right" src="/img/Nigeria.png" class="h-[25px] w-[30px]" />
+            <img data-aos="fade-up" src="/img/USA.png" class="h-[25px] w-[30px]" />
+            <img data-aos="fade-left" src="/img/Malawi.png" class="h-[25px] w-[30px]" />
+            <img data-aos="slide-down" src="/img/Mozambiq.png" class="h-[25px] w-[30px]" />
+            <img data-aos="slide-left" src="/img/Kenya.png" class="h-[25px] w-[30px]" />
+            <img data-aos="slide-up" src="/img/Togo.png" class="h-[25px] w-[30px]" />
+            <img data-aos="fade-right" src="/img/Turkey.png" class="h-[25px] w-[30px]" />
+            <img data-aos="fade-down" src="/img/Liberia.png" class="h-[25px] w-[30px]" />
+            <img data-aos="fade-up-left" src="/img/Yemen.png" class="h-[25px] w-[30px]" />
         </div>
     </div>
 </div>
