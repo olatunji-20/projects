@@ -11,16 +11,16 @@
         <p class="pt-4">We're committed to transparency and the use of our survey technology to collect and share real-time updates and stories
             in this live newsfeed.
         </p>
-        <p class="font-bold pt-8 text-[#6B9B8F]">Learn about how we collect stories <span><i class="material-symbols-outlined relative top-2 font-bold">start</i></span></p>
+        <p class="font-bold pt-8 text-[#6B9B8F]" style="font-family: jackquard 24;">Learn about how we collect stories <span><i class="material-symbols-outlined relative top-2 font-bold">start</i></span></p>
     </div>
     <div class="w-[100%] h-[420px] md:w-[55%] md:h-[550px]">
         <div class="w-[400px] h-[400px] overflow-hidden m-[auto] relative flex justify-center items-center md:w-[540px] md:h-[540px]">
 
-            <div class="zig border-2 border-green-900 bg-red-400 rounded-full h-[10px] w-[10px] absolute"></div>
+            <div class="zig border-2 border-green-800 bg-[#6B9B8F] rounded-full h-[10px] w-[10px] absolute"></div>
 
-            <div class="rot3 border-2 border-green-900 bg-purple-400 rounded-full h-[15px] w-[15px] absolute"></div>
-            <div class="rot border-2 border-green-400 bg-red-600 rounded-full h-[20px] w-[20px] absolute"></div>
-            <div class="rot2 border-2 border-green-900 bg-green-400 rounded-full h-[20px] w-[20px] absolute"></div>
+            <div class="rot3 border-2 border-green-800 bg-[#6B9B8F] rounded-full h-[15px] w-[15px] absolute"></div>
+            <div class="rot border-2 border-green-800 bg-[#6B9B8F] rounded-full h-[20px] w-[20px] absolute"></div>
+            <div class="rot2 border-2 border-green-800 bg-[#6B9B8F] rounded-full h-[20px] w-[20px] absolute"></div>
 
             <div class="border border-gray-800 w-[95%] h-[95%] rounded-full flex">
                 <div class="border-2 border-gray-600 w-[75%] h-[75%] rounded-full m-[auto] flex">

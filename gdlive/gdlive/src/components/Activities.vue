@@ -13,7 +13,7 @@
     <div class="w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.finalPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll" ><span v-if="showEnroll"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
+        <p class="inline ml-4 border px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll" ><span v-if="showEnroll"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
     </div>
   </div>
 
@@ -36,7 +36,7 @@
     <div class="w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.firstPaymentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll2"><span v-if="showEnroll2"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
+        <p class="inline ml-4 border px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll2"><span v-if="showEnroll2"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
     </div>
   </div>
 
@@ -59,7 +59,7 @@
     <div class="w-[25%] h-[100%]">
         <p class="hidden md:block">{{ timeAgo(paymentInfo.enrollmentTime) }}</p>
         <p class="hidden md:inline-block">Show story</p>
-        <p class="inline ml-4 border border-green-500 px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll3"><span v-if="showEnroll3"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
+        <p class="inline ml-4 border px-1 pt-2 relative top-2 cursor-pointer" @click="toggleEnroll3"><span v-if="showEnroll3"><i class="material-symbols-outlined font-bold">keyboard_control_key</i></span><span v-else><i class="material-symbols-outlined font-bold">expand_more</i></span></p>
     </div>
   </div>
 

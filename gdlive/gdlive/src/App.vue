@@ -13,4 +13,11 @@ import { RouterLink, RouterView } from 'vue-router'
 html {
   scroll-behavior: smooth;
 }
+#app {
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
 </style>

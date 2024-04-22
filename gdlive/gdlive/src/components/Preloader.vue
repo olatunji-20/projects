@@ -23,7 +23,7 @@ export default {
 }
 .sub {
   border: 8px solid #cccccc;
-  border-top: 8px solid #db4444;
+  border-top: 8px solid #6B9B8F;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
