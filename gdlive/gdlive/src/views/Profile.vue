@@ -6,7 +6,7 @@
                 <div class="w-[100%] h-[100%] overflow-hidden hover:cursor-pointer">
                     <img :src="profileStore.profile.coverImage" class="h-[100%] w-[100%] object-cover hover:scale-150 duration-500" />
                 </div>
-                <div class="border-2 border-yellow-600 w-[130px] h-[130px] rounded-full relative left-4 bottom-16 bg-blue-200 md:w-[200px] md:h-[200px] md:bottom-[30%]">
+                <div class="border-2 border-rose-300 w-[130px] h-[130px] rounded-full relative left-4 bottom-16 bg-blue-200 md:w-[200px] md:h-[200px] md:bottom-[30%]">
                     <img :src="profileStore.profile.imageUrl" class="h-[100%] w-[100%] object-cover" />
                 </div>
             </div>

@@ -4,7 +4,7 @@
     <div v-else v-for="p in profileStore.profiles" :key="p.id" class="bg-gray-50 rounded-md w-[100%] h-[auto] pb-2 p-1 my-4 overflow-hidden text-wrap md:w-[300px] md:h-[auto]">
         <router-link :to="/profile/ + `${p.id}`">
             <div class="w-[100%] rounded-md h-[200px] overflow-hidden">
-                <img :src="p.coverImage" class="h-[100%] w-[100%] object-fill hover:scale-150 duration-500" />
+                <img :src="p.coverImage" :alt="p.name + ' ' + p.heading" class="h-[100%] w-[100%] object-fill hover:scale-150 duration-500" />
             </div>
             <h3 class="font-bold text-[15px] py-3"><span class="text-green-700">{{ p.name }}</span>, {{ p.heading }}</h3>
             <p class="text-green-700">{{ timeAgo(p.posted) }}</p>
