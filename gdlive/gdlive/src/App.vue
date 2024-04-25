@@ -6,14 +6,15 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
-<style scoped>
+<style>
 * {
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
-  font-style: normal;
 }
-
+#app, body {
+  font-family: "Schibsted Grotesk", sans-serif;
+}
 
 </style>
